@@ -6,14 +6,15 @@ import org.openqa.selenium.By;
 
 public class SearchCoursePage extends PageObject {
     public static final Target BUTTON_UC = Target.the("Selecciona la Universidad choucair")
-            .located(By.xpath("//div[@id='certificaciones']//a[contains(text(),'Cursos y Certificaciones')]"));/*se hizo cambio de Universidad a Certificaciones*/
+            .located(By.xpath("//div[@id='certificaciones']//strong[contains(text(),'Cursos y')]"));//Se busca el curso certificsción para hacer la prueba
     public static final Target INPUT_COURSE=Target.the("Buscar el curso")
             .located(By.id("coursesearchbox"));
     public static final Target BUTTON_GO= Target.the("Da click para buscar el curso")
             .located(By.xpath("//button[@type='submit']"));
-    public static final Target SELECT_COURSE= Target.the("Da click para buscar el curso")
-            .located(By.xpath("//h4[contains(text(),'Recursos Automatización Bancolombia')]"));
-    public static final Target NAME_COURSE = Target.the("Extrae el nombre del curso").located(By.xpath("//h1[contains(text(),'Recursos Automatización Bancolombia')]"));
+    public static final Target SELECT_COURSE= Target.the("Da click para seleccionar el curso")
+            .located(By.xpath("//a[@href='https://operacion.choucairtesting.com/academy/course/view.php?id=1279']"));
+    public static final Target NAME_COURSE = Target.the("Extrae el nombre del curso")
+            .located(By.xpath("//*[contains(@title, 'Prueba Técnica - Analista Bancolombia')]"));
 
 
 }

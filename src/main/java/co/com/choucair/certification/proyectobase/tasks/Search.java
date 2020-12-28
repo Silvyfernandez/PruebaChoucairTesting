@@ -17,7 +17,7 @@ public class Search implements Task {
     }
     public static Search the(String course)
     {
-        return Tasks.instrumented(Search.class);
+        return Tasks.instrumented(Search.class, course);
     }
     @Override
     public <T extends Actor> void performAs(T actor) {

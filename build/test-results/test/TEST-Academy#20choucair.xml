@@ -1,130 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Academy choucair" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-24T20:56:29" hostname="DESKTOP-HGED66D" time="91.566">
+<testsuite name="Academy choucair" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-28T14:58:52" hostname="DESKTOP-HGED66D" time="70.305">
   <properties/>
-  <testcase name="Search for automation course" classname="Academy choucair" time="91.566">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at net.serenitybdd.core.injectors.EnvironmentDependencyInjector.matchingFieldsIn(EnvironmentDependencyInjector.java:88)
-	at net.serenitybdd.core.injectors.EnvironmentDependencyInjector.injectDependenciesInto(EnvironmentDependencyInjector.java:32)
-	at net.thucydides.core.steps.PageObjectDependencyInjector.injectDependenciesInto(PageObjectDependencyInjector.java:28)
-	at net.thucydides.core.steps.StepFactory.injectOtherDependenciesInto(StepFactory.java:181)
-	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:198)
-	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:130)
-	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
-	at co.com.choucair.certification.proyectobase.tasks.Search.the(Search.java:20)
-	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(ChoucairAcademyStepDefinitions.java:29)
-	at ✽.she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform(src/test/resources/Features/academyChoucair.feature:8)
+  <testcase name="Search for automation course" classname="Academy choucair" time="70.305">
+    <failure message="java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]&quot;}&#10;  (Session info: chrome=87.0.4280.88)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-HGED66D', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\silvana\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 67a5f2f67288d205ddf0ae875cecec4f&#10;*** Element info: {Using=xpath, value=//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]}" type="java.lang.AssertionError">java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HGED66D', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\silvana\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 67a5f2f67288d205ddf0ae875cecec4f
+*** Element info: {Using=xpath, value=//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]}
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.sheFindsTheCourseCalledResourcesRecursosAutomatizacionBancolombia(ChoucairAcademyStepDefinitions.java:34)
+	at ✽.she finds the course called resources Prueba Técnica - Analista Bancolombia(src/test/resources/Features/academyChoucair.feature:9)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1e36172f
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6bd31ac6
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1ae84dd9
-dic 24, 2020 3:56:36 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+dic 28, 2020 9:58:54 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --star-maximized, goog:chromeOptions: {args: [--star-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 12129
+Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 10114
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic 24, 2020 3:57:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+dic 28, 2020 9:59:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@443dbe2
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@785a390
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d828d6c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5641fb97
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2bf7e244
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1059e26a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7b3029fa
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4e68451
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3773d3e1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@621eb76
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@fb4a807
-[Test worker] ERROR net.thucydides.core.steps.StepFactory - Cannot create StepFactory for  class co.com.choucair.certification.proyectobase.tasks.Search
-java.lang.NoSuchMethodException: co.com.choucair.certification.proyectobase.tasks.Search$ByteBuddy$GwKDZjlh.<init>()
-	at java.lang.Class.getConstructor0(Class.java:3082)
-	at java.lang.Class.getDeclaredConstructor(Class.java:2178)
-	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:227)
-	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:194)
-	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:130)
-	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
-	at co.com.choucair.certification.proyectobase.tasks.Search.the(Search.java:20)
-	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(ChoucairAcademyStepDefinitions.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:31)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:25)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@449f1a2e
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform, Then she finds the course called resources Prueba Técnica - Analista Bancolombia
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform, Then she finds the course called resources Prueba Técnica - Analista Bancolombia]
-[Test worker] WARN net.thucydides.core.webdriver.WebDriverFacade - Error while quitting the driver (Error communicating with the remote browser. It may have died.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HGED66D', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\silvana\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63728}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f286c90d71e8bf02144b82ac47a4a0d7)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform, Then she finds the course called resources Prueba Técnica - Analista Bancolombia]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@439337b6
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32dcde28
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7f334174
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3ae8f4ff
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@24479a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@240a51f8
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@629dd865
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1400c792
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]]
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -135,7 +72,7 @@ Session ID: f286c90d71e8bf02144b82ac47a4a0d7)
 
 TEST FAILED WITH ERROR: Search for automation course
 ---------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then answer
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]"}
 ]]></system-err>
 </testsuite>
