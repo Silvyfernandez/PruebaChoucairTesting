@@ -14,7 +14,9 @@ public class SearchCoursePage extends PageObject {
     public static final Target SELECT_COURSE= Target.the("Da click para seleccionar el curso")
             .located(By.xpath("//a[@href='https://operacion.choucairtesting.com/academy/course/view.php?id=1279']"));
     public static final Target NAME_COURSE = Target.the("Extrae el nombre del curso")
-            .located(By.xpath("//*[contains(@title, 'Prueba Técnica - Analista Bancolombia')]"));
+            .located(By.xpath("//div[@class='page-header-headings']//h1[contains(text(),'Prueba')]"));
+   /* public static final Target NAME_COURSE = Target.the("Extrae el nombre del curso")
+           .located(By.xpath("//span[@class='instancename'][contains(text(),'Foro de Bienvenida')]"));*/
 
 
 }

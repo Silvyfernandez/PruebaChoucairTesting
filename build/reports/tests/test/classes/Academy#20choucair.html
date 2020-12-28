@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m10.31s</div>
+<div class="counter">1m6.32s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,40 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Search for automation course"></a>
-<h3 class="failures">Search for automation course</h3>
-<span class="code">
-<pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HGED66D', ip: '192.168.0.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\silvana\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 67a5f2f67288d205ddf0ae875cecec4f
-*** Element info: {Using=xpath, value=//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]}
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.sheFindsTheCourseCalledResourcesRecursosAutomatizacionBancolombia(ChoucairAcademyStepDefinitions.java:34)
-	at ✽.she finds the course called resources Prueba Técnica - Analista Bancolombia(src/test/resources/Features/academyChoucair.feature:9)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -105,70 +78,70 @@ Session ID: 67a5f2f67288d205ddf0ae875cecec4f
 </tr>
 </thead>
 <tr>
-<td class="failures">Search for automation course</td>
-<td class="failures">1m10.31s</td>
-<td class="failures">failed</td>
+<td class="success">Search for automation course</td>
+<td class="success">1m6.32s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1e36172f
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6bd31ac6
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1ae84dd9
-dic 28, 2020 9:58:54 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@56c01eda
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@12e05d0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@247342f3
+dic 28, 2020 1:56:16 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --star-maximized, goog:chromeOptions: {args: [--star-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 10114
+Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 18125
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic 28, 2020 9:59:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+dic 28, 2020 1:56:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d828d6c
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5641fb97
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4759253f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6606f004
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1059e26a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@21598dba
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4e68451
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1152f66
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@621eb76
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3778b32
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@439337b6
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32dcde28
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7f334174
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1fc10941
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@41a24bed
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@163ee206
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3ae8f4ff
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@502b25ce
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@24479a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@651f645c
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@240a51f8
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2e8a388f
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@629dd865
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1400c792
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7106933d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@605725e0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Search for automation course:Given than silvana wants to learn automation at the academy choucair [Silvana open up [Silvana opens the Choucair academypage], Silvana login [Silvana clicks on button that shows us the form to login, Silvana enters '1061715763' into where do we write the user, Silvana enters 'Choucair2020*' into where do we write the password, Silvana clicks on button to confire login]], When she search for the course Prueba Técnica - Analista Bancolombia on the choucair academy platform [Silvana search [Silvana clicks on Selecciona la Universidad choucair, Silvana enters 'Prueba Técnica - Analista Bancolombia' into Buscar el curso, Silvana clicks on Da click para buscar el curso, Silvana clicks on Da click para seleccionar el curso]], Then she finds the course called resources Prueba Técnica - Analista Bancolombia [Then answer]]
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED WITH ERROR: Search for automation course
----------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then answer
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@title, 'Prueba TÃ©cnica - Analista Bancolombia')]&quot;}
+TEST PASSED: Search for automation course
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -180,7 +153,7 @@ TEST FAILED WITH ERROR: Search for automation course
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 28/12/2020 10:00:22 AM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 28/12/2020 01:57:41 PM</p>
 </div>
 </div>
 </body>
